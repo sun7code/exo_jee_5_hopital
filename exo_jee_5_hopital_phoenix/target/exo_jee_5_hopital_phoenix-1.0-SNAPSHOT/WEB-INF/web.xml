@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.auth.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreatePatientServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.patient.CreatePatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreatePatientServlet</servlet-name>
+        <url-pattern>/create-patient</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListPatientsServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.patient.ListPatientsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListPatientsServlet</servlet-name>
+        <url-pattern>/list-patients</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PatientDetailsServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.patient.PatientDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientDetailsServlet</servlet-name>
+        <url-pattern>/patient-details</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateConsultationServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.consultation.CreateConsultationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateConsultationServlet</servlet-name>
+        <url-pattern>/create-consultation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConsultationDetailsServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.consultation.ConsultationDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsultationDetailsServlet</servlet-name>
+        <url-pattern>/consultation-details</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreatePrescriptionServlet</servlet-name>
+        <servlet-class>org.example.exo_jee_5_hopital_phoenix.prescription.CreatePrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreatePrescriptionServlet</servlet-name>
+        <url-pattern>/create-prescription</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
